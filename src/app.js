@@ -26,9 +26,9 @@ function getDomainName() {
         ) {
           let domainNameConcat =
             pronoun[pronounIndex] +
-            "." +
+            "" +
             adjective[adjectiveIndex] +
-            "." +
+            "" +
             noun[nounIndex] +
             "." +
             domainNameEnxtension[domainNameEnxtensionIndex];
