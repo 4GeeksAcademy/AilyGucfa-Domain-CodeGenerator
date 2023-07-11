@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 let pronoun = ["my", "some", "our"];
 let adjective = ["great", "funny", "wonderful"];
 let noun = ["adventure", "catVideos", "dog"];
-let domainName = ["net", "com", "org"];
+let domainNameEnxtension = ["net", "com", "org"];
 
 function getDomainName() {
   let result = "";
@@ -20,9 +20,9 @@ function getDomainName() {
     ) {
       for (let nounIndex = 0; nounIndex < noun.length; nounIndex++) {
         for (
-          let domainNameIndex = 0;
-          domainNameIndex < domainName.length;
-          domainNameIndex++
+          let domainNameEnxtensionIndex = 0;
+          domainNameEnxtensionIndex < domainNameEnxtension.length;
+          domainNameEnxtensionIndex++
         ) {
           let domainNameConcat =
             pronoun[pronounIndex] +
@@ -31,7 +31,7 @@ function getDomainName() {
             "." +
             noun[nounIndex] +
             "." +
-            domainName[domainNameIndex];
+            domainNameEnxtension[domainNameEnxtensionIndex];
           result = result + domainNameConcat + "<br>";
         }
       }
